@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <div class="yellow"></div>
+
+
+    <div class="title">Instructions</div>
+    <ul>
+        <li>Change the "First Name" or "Last Name" and see the "Full Name" change.</li>
+        <li>Try adding and deleting people.</li>
+    </ul>
+
+    <div id="peopleList">
+        <div id="commands">
+            <button data-bind="click: add" class="k-button">Add</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Full Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody data-bind="source: people" data-template="personTemplate">
+            </tbody>
+        </table>
+    </div>
+
+    <script type="text/x-kendo-template" id="personTemplate">
+        <tr>
+            <td><input data-bind="value: firstName" /></td>
+            <td><input data-bind="value: lastName" /></td>
+            <td><span data-bind="text: fullName" /></td>
+            <td><button class="k-button" data-bind="click: delete">X</button></td>
+        </tr>
+    </script>
+</body>
+
+</html>

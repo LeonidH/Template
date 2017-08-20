@@ -1,0 +1,51 @@
+.yellow {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#peopleList {
+    width: 375px;
+    margin-top: 5px;
+}
+
+#commands {
+    width: 373px;
+    background-color: #C0C0C0;
+}
+
+table {
+    width: 375px;
+}
+
+table,
+th,
+td,
+#commands {
+    border: 1px solid Gray;
+}
+
+th {
+    width: 100px;
+    background-color: Gray;
+    color: White;
+}
+
+th:last-child {
+    width: 30px;
+}
+
+td {
+    padding-left: 4px;
+    padding-top: 2px;
+    height: 25px;
+}
+
+td input {
+    width: 90px;
+}
